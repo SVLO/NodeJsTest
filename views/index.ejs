@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title><simple></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+     <% include templates/header.ejs %>
+     <p><%= nameVar %></p>
+     <h3><%= customerData.lastName %></h3>
+     <p><%= customerData.address.city %></p> 
+     <ul>
+         <% customerData.phoneNumber.forEach(function(item){ %>  
+            <li><%= item.number %></li>    
+         <% }); %>            
+     </ul>
+
+</body>
+  
+</html>

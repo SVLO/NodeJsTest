@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+      <% include templates/header.ejs %>
+        <h3><%= title %></h3>
+        <p>My Fav Painter is <%= myFavPainter %></p>
+		<p>This page is about <%= nameVar %></p>
+    <ul>
+        <% googleDataVar.forEach(function(item){ %>  
+            <li><%= item.name %></li>
+          <% }); %>       
+    </ul>
+ 
+
+  </body>
+</html>
